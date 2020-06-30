@@ -15,7 +15,7 @@ class TESTINGGROUNDS_API UPatrolRouteCPP : public UActorComponent
 public:
 	TArray<AActor*> GetPatrolPoints() const;
 
-protected:
-	UPROPERTY(EditInstanceOnly, Category = "AI")
-	TArray<AActor*> PatrolPoints;
+private:
+	UPROPERTY(EditInstanceOnly, Category = "Patrol Route")
+		TArray<AActor*> PatrolPoints;
 };
